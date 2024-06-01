@@ -1,0 +1,32 @@
+
+.todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo-list input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.todo-list button {
+  padding: 10px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.todo-list li button {
+  margin-left: 10px;
+}

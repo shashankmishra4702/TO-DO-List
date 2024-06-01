@@ -1,0 +1,151 @@
+
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.todo-list {
+    width: 40%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.todo-list:hover {
+    transform: scale(1.05);
+}
+
+.todo-list h1 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.todo-list input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.todo-list input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.todo-list button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo-list button:hover {
+    background-color: #45a049;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    animation: fadeIn 0.5s ease;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.todo-list li:hover {
+    background-color: #f9f9f9;
+    transform: translateX(5px);
+}
+
+.todo-list li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-list li button.complete {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.todo-list li button.complete:hover {
+    background-color: #45a049;
+}
+
+.todo-list li button.remove {
+    background-color: #f44336;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.todo-list li button.remove:hover {
+    background-color: #e53935;
+}
+
+.todo-list li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-list .filter-sort {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.todo-list .filter-sort label {
+    display: flex;
+    align-items: center;
+}
+
+.todo-list .filter-sort select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
