@@ -22,8 +22,8 @@ Follow these steps to set up the project on your local machine.
 
 ### Clone the Repository
 
-git clone https://github.com/your-username/react-todo-list.git
-cd react-todo-list
+- git clone https://github.com/your-username/react-todo-list.git
+- cd react-todo-list
 
 ### Install Dependencies
 npm install
